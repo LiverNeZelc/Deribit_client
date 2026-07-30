@@ -1,0 +1,21 @@
+# This is an example configuration file
+# To learn more, see the full config.yaml reference: https://docs.continue.dev/reference
+
+name: Example Config
+version: 1.0.0
+schema: v1
+
+# Define which models can be used
+# https://docs.continue.dev/customization/models
+models:
+  - name: qwythos-9b-claude-mythos
+    provider: openai
+    model: qwythos-9b-claude-mythos-5-1m
+    apiBase: http://localhost:1234/v1
+    apiKey: lm-studio
+    roles:
+      - apply
+      - autocomplete
+      - chat
+      - edit
+  
